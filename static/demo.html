@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Demo Results Explanation</title>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="main.css">
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <a class="navbar-brand" href="#">MET CS601 Web Application Development Project</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+               <li class="nav-item">
+                  <button class="btn btn-primary" id="demo">Demo Results</button>
+               </li>
+               <li class="nav-item">
+                  <button class="btn btn-primary" id="on-demand-scan-btn">On-Demand Scan</button>
+               </li>
+               <li class="nav-item">
+                  <button class="btn btn-primary" id="about">About</button>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="container">
+         <h1 class="mt-5">Demo Results Explanation</h1>
+         <p>
+            The demo results image presents an example of Trivy vulnerability scanning output for a Docker image. In this case, the scanned image is "nginx:1.17", which is a popular web server. The results showcase the types of information provided by Trivy, helping users understand the security vulnerabilities present within the container image.
+         </p>
+         <p>
+            The scanning results are organized into a table format, with each row representing a unique vulnerability. The columns display the following information:
+         </p>
+         <ul>
+            <li><strong>Library:</strong> The affected library or package name in the container image.</li>
+            <li><strong>Vulnerability ID:</strong> A unique identifier for the vulnerability, typically provided by the CVE (Common Vulnerabilities and Exposures) database or other vulnerability databases.</li>
+            <li><strong>Severity:</strong> The severity level of the vulnerability, which can be Critical, High, Medium, Low, or Unknown. This helps users prioritize which vulnerabilities to address first.</li>
+            <li><strong>Installed Version:</strong> The version of the affected library or package installed in the container image.</li>
+            <li><strong>Fixed Version:</strong> The version of the library or package that resolves the vulnerability. Users can update to this version to mitigate the risk.</li>
+         </ul>
+         <p>
+            In addition to the table, the results display the total number of vulnerabilities found, organized by severity. This summary provides users with a quick overview of the security posture of the container image.
+         </p>
+         <p>
+            Users can leverage the information provided in the demo results to make informed decisions about their container images, such as updating specific libraries or packages or selecting a more secure base image. By addressing the vulnerabilities identified by Trivy, users can improve the overall security of their applications and reduce the risk of exploitation.
+         </p>
+         <div class="img-container">
+            <img src="png/algo.png" alt="Algorithm Diagram" data-image="png/algo.png">
+            <img src="png/top10.png" alt="Algorithm Diagram" data-image="png/top10.png">
+         </div>
+         <div class="img-container">
+            <img src="png/vulnerability_by_serverity.png" alt="Algorithm Diagram" data-image="png/vulnerability_by_serverity.png">
+            <img src="png/vulnerability_count_by_year.png" alt="Algorithm Diagram" data-image="png/vulnerability_count_by_year.png">
+         </div>
+         <div class="img-container">
+            <img src="png/vulnerabilities_over_time.png" alt="Algorithm Diagram" data-image="png/vulnerabilities_over_time.png">
+            <img src="png/vulnerability_top10.png" alt="Algorithm Diagram" data-image="png/vulnerability_top10.png">
+         </div>
+      </div>
+      <script type="module" src="main.js"></script>
+      <script src="lightbox.js"></script>
+   </body>
+</html>

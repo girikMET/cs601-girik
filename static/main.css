@@ -1,0 +1,238 @@
+#vulnerability-form .form-group label {
+}
+ #vulnerability-form .form-group input {
+}
+ #vulnerability-form button[type="submit"] {
+}
+ .container h1 {
+}
+ .container form {
+}
+ #loading p {
+}
+ #vulnerabilities-table table {
+}
+ #vulnerabilities-table thead {
+}
+ #vulnerabilities-table tbody {
+}
+ #vulnerabilities-table td {
+}
+ #vulnerabilities-table th {
+}
+ .form-group > label {
+}
+ .form-control ~ button {
+}
+ h1 + form {
+}
+ form ~ #loading {
+}
+ #loading + #vulnerabilities-table {
+}
+ .container {
+}
+ .mt-5 {
+}
+ #vulnerability-form {
+}
+ #loading {
+}
+ .form-group input::placeholder {
+}
+ #loading::before {
+}
+ #loading::after {
+}
+ #vulnerabilities-table tbody tr:nth-child(odd)::before {
+}
+ #vulnerabilities-table tbody tr:nth-child(odd)::after {
+}
+ button:hover {
+}
+ button:focus {
+}
+ button:active {
+}
+ input:focus {
+}
+ input:required {
+}
+
+.container {
+  padding: 2rem;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.img-container img {
+  display: block;
+  margin: 1rem;
+  width: 47%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+}
+
+/* General styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header styling */
+header {
+  background-color: #35434c;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #fff;
+  margin: 0;
+}
+
+header p {
+  color: #ccc;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Navigation styling */
+nav {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+
+/* Main content styling */
+article {
+  float: left;
+  width: 70%;
+  padding: 0 30px;
+}
+
+article img {
+  max-width: 100%;
+}
+
+article h2 {
+  color: #35434c;
+}
+
+article p {
+  line-height: 1.6;
+}
+
+/* Sidebar styling */
+aside {
+  float: right;
+  width: 30%;
+  padding: 0 30px;
+}
+
+aside h2 {
+  color: #35434c;
+}
+
+aside p {
+  line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* The lightbox container */
+.lightbox {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The lightbox image */
+.lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* The close button */
+.lightbox .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
