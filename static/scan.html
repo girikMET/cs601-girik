@@ -1,61 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>On-Demand Scan</title>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="main.css">
-      <link rel="icon" type="image/x-icon" href="favicon.ico">
-   </head>
-   <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-         <a class="navbar-brand" href="#">MET CS601 Web Application Development Project</a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On-Demand Scan</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="png/favicon.ico">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="#">MET CS601 Web Application Development Project</a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
          </button>
          <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-               <li class="nav-item">
+	       <li class="nav-item">
                   <button class="btn btn-primary" id="demo">Demo Results</button>
                </li>
                <li class="nav-item">
                   <button class="btn btn-primary" id="on-demand-scan-btn">On-Demand Scan</button>
                </li>
                <li class="nav-item">
-                  <button class="btn btn-primary" id="about">About</button>
+		  <button class="btn btn-primary" id="about">About</button>
                </li>
             </ul>
          </div>
-      </nav>
-      <div class="container">
-         <h1 class="mt-5">On-Demand Vulnerability Scanning</h1>
-         <p>
+    </nav>
+    <div class="container">
+        <h1 class="mt-5">On-Demand Vulnerability Scanning</h1>
+        <p>
             The On-Demand Vulnerability Scanning feature allows users to perform vulnerability scans on Docker images using Trivy. By inputting the desired Docker image's name and tag, users can initiate a scan that will analyze the image for any known vulnerabilities present in the OS packages and application dependencies. The results of the scan will be displayed in a clear and concise format, enabling users to make informed decisions about the security of their container images.
-         </p>
-         <p>
+        </p>
+        <p>
             To perform an on-demand vulnerability scan, follow these steps:
-         </p>
-         <ol>
+        </p>
+        <ol>
             <li>Enter the Docker image name in the provided input field. The image name should be in the format <code>repository/image</code>. For example, <code>library/nginx</code>.</li>
             <li>Enter the tag for the desired Docker image. If no tag is provided, the default value will be "latest".</li>
             <li>Click the "Scan" button to initiate the vulnerability scanning process.</li>
             <li>Wait for the scan to complete. The duration of the scan will depend on the size and complexity of the Docker image.</li>
             <li>Review the displayed results, which will include information about any detected vulnerabilities, their severity, and their associated packages.</li>
-         </ol>
-         <p>
+        </ol>
+        <p>
             By using this on-demand scanning feature, users can gain insights into the security of their Docker images and address any potential issues. Regularly scanning container images and resolving detected vulnerabilities is an essential step in maintaining a secure application environment.
-         </p>
-         <p>
+        </p>
+        <p>
             In addition to on-demand scanning, it is recommended to integrate vulnerability scanning into your development process. This can be achieved by incorporating Trivy into your CI/CD pipeline, ensuring that your images are scanned for vulnerabilities during the build process. By doing so, you can identify and fix security issues before they make their way into production environments.
-         </p>
-         <p>
+        </p>
+        <p>
             Remember that vulnerability scanning is just one aspect of maintaining a secure environment. It is essential to complement scanning with other security best practices, such as regular patching, minimizing attack surfaces, and implementing access controls.
-         </p>
-         <form id="vulnerability-form" class="mt-4">
+        </p>
+	<form id="vulnerability-form" class="mt-4">
             <div class="form-group">
                <label for="image">Docker Image:</label>
                <input type="text" class="form-control" id="image" name="image" placeholder="e.g. ubuntu:latest" required>
@@ -83,7 +83,7 @@
                </tbody>
             </table>
             <div class="img-container">
-               <img src="png/1.png" alt="Algorithm Diagram 1" data-image="png/1.png">
+	       <img src="png/1.png" alt="Algorithm Diagram 1" data-image="png/1.png">
                <img src="png/2.png" alt="Algorithm Diagram 2" data-image="png/2.png">
             </div>
             <div class="img-container">
@@ -148,7 +148,7 @@
              });
          });
       </script>
-      <script type="module" src="main.js"></script>
-      <script src="lightbox.js"></script>
+      <script type="module" src="js/main.js"></script>
+      <script src="js/lightbox.js"></script>
    </body>
 </html>

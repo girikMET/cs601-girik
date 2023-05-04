@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>About Trivy Vulnerability Scanner</title>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="main.css">
-      <link rel="icon" type="image/x-icon" href="favicon.ico">
-   </head>
-   <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Trivy Vulnerability Scanner</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="png/favicon.ico">
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
          <a class="navbar-brand" href="#">MET CS601 Web Application Development Project</a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
          </button>
          <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                <li class="nav-item">
-                  <button class="btn btn-primary" id="demo">Demo Results</button>
+     	          <button class="btn btn-primary" id="demo">Demo Results</button>
                </li>
                <li class="nav-item">
                   <button class="btn btn-primary" id="on-demand-scan-btn">On-Demand Scan</button>
@@ -31,31 +31,32 @@
             </ul>
          </div>
       </nav>
-      <div class="container">
-         <h1 class="mt-5">About Trivy Vulnerability Scanner</h1>
-         <p>
+    <div class="container">
+        <h1 class="mt-5">About Trivy Vulnerability Scanner</h1>
+        <p>
             Trivy is an open-source, simple, and comprehensive vulnerability scanner for containers and other artifacts. It detects vulnerabilities in OS packages (Alpine, RHEL, CentOS, etc.) and application dependencies (Bundler, Composer, npm, yarn, etc.). Trivy is easy to use, requiring no prior knowledge or complex configuration, making it an ideal choice for those new to vulnerability scanning and experienced developers alike.
-         </p>
-         <p>
+        </p>
+        <p>
             As containerization gains popularity, the need for securing container images is becoming increasingly important. Containers can contain various vulnerabilities, including those in the base image, OS packages, and application dependencies. Identifying and addressing these vulnerabilities is critical to maintaining a secure application environment.
-         </p>
-         <p>
+        </p>
+        <p>
             Trivy's key features include:
-         </p>
-         <ul>
+        </p>
+        <ul>
             <li>Wide range of supported languages and package managers</li>
             <li>Fast scanning, as Trivy only scans the diff between the layers in a container image</li>
             <li>High accuracy, as Trivy is able to recognize various types of vulnerabilities</li>
             <li>Simple and easy-to-understand output format, making it easy for developers to understand and act upon</li>
             <li>Integration with CI/CD pipelines, allowing vulnerability scans to be a part of the development process</li>
-         </ul>
-         <p>
+        </ul>
+        <p>
             In this project, we utilize Trivy to perform on-demand vulnerability scanning of Docker images. By providing a simple interface for users to input a Docker image, our application leverages Trivy's capabilities to scan the image and display the results. This enables developers and system administrators to quickly and easily assess the security of their container images and make informed decisions about their deployment.
-         </p>
-         <p>
+        </p>
+        <p>
             To learn more about Trivy and its features, visit the official GitHub repository at <a href="https://github.com/aquasecurity/trivy" target="_blank">https://github.com/aquasecurity/trivy</a>.
-         </p>
-      </div>
-      <script type="module" src="main.js"></script>
-   </body>
+        </p>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
 </html>
+
